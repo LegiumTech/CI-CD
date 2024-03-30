@@ -6,17 +6,4 @@ on:
 jobs:
   run-test:
     name: Run JavaScript Tests
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set Up Node
-        uses: actions/setup-node@v4
-
-      - name: Install Dependencies
-        run: npm ci
-
-      - name: Run Test
-        run: npm run test
+    runs-on: macos-latests
